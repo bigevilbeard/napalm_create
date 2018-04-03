@@ -210,6 +210,10 @@ napalm --user cisco --password cisco_1234! --vendor ios --optional_args "port=22
 ```
 
 ```
+napalm --debug --user cisco --password cisco_1234! --vendor ios --optional_args "port=22" 10.10.20.48 call get_facts
+```
+
+```
 python get_method.py
 
 ```

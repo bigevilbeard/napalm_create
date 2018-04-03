@@ -139,10 +139,6 @@ pip install -r requirements.txt
 ```
 
 ```
-pip install -r requirements.txt
-```
-
-```
  STUACLAR-M-R6EU:$ pip install napalm
 Collecting napalm
   Downloading napalm-2.3.0.tar.gz (147kB)

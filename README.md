@@ -21,7 +21,7 @@ When installing Napalm installed the latest version 2.X as there were fundamenta
 You can install napalm with pip:
 
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 ```
@@ -203,12 +203,17 @@ actions:
 Automate all the things!!!
 ```
 
-```
-
 
 ```
 napalm --user cisco --password cisco_1234! --vendor ios --optional_args "port=22" 10.10.20.48 call get_facts
 
 ```
+
+```
+python get_method.py
+
+```
+
+
 
 

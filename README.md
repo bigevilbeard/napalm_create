@@ -1,13 +1,27 @@
 # napalm_create
 Intro to Napalm Devnet Create 2018
 
+# Connect to the Lab
+
+```
+ssh root@10.10.20.20 / password cisco123
+
+mkdir napalm
+
+```
+# Clone the Repo
+
+```
+git clone https://github.com/bigevilbeard/napalm_create.git
+```
+
 # Installing Napalm
 
 When installing Napalm installed the latest version 2.X as there were fundamental changes that happened between Naplm 1.X and 2.X.
 You can install napalm with pip:
 
 ```
-pip install napalm
+pip install -r requirements
 ```
 
 ```
@@ -135,6 +149,21 @@ Installing collected packages: future, jtextfsm, MarkupSafe, jinja2, netaddr, py
 Successfully installed MarkupSafe-1.0 asn1crypto-0.24.0 bcrypt-3.1.4 certifi-2018.1.18 cffi-1.11.5 chardet-3.0.4 cryptography-2.1.4 enum34-1.1.6 future-0.16.0 idna-2.6 ipaddress-1.0.19 jinja2-2.10 jtextfsm-0.3.1 junos-eznc-2.1.7 lxml-4.1.1 napalm-2.3.0 ncclient-0.5.3 netaddr-0.7.19 netmiko-2.1.0 paramiko-2.4.0 pyIOSXR-0.52 pyYAML-3.12 pyasn1-0.4.2 pycparser-2.18 pyeapi-0.8.2 pynacl-1.2.1 pynxos-0.0.3 pyserial-3.4 requests-2.18.4 scp-0.10.2 six-1.11.0 textfsm-0.3.2 urllib3-1.22
 ```
 
+```
+pip show napalm
+Name: napalm
+Version: 2.3.0
+Summary: Network Automation and Programmability Abstraction Layer with Multivendor support
+Home-page: https://github.com/napalm-automation/napalm
+Author: David Barroso, Kirk Byers, Mircea Ulinic
+Author-email: dbarrosop@dravetech.com, ping@mirceaulinic.net, ktbyers@twb-tech.com
+License: UNKNOWN
+Location: /root/venv/python2/lib/python2.7/site-packages
+Requires: jinja2, future, junos-eznc, pyeapi, netaddr, pyYAML, pyIOSXR, jtextfsm, netmiko, pynxos, scp
+```
+
+
+
 # Napalm Help
 
 Napalm comes with a simple cli tool so you can use napalm straight from the cli. You can see the help with `napalm--help`.
@@ -175,7 +204,10 @@ Automate all the things!!!
 ```
 
 ```
-napalm --user cisco --password cisco --vendor ios-xe --optional_args "port=22" [IP ADDRESS] call get_interfaces
+
+
+```
+napalm --user cisco --password cisco_1234! --vendor ios --optional_args "port=22" 10.10.20.48 call get_facts
 
 ```
 

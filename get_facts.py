@@ -1,27 +1,18 @@
 #!/usr/bin/env python
 
 ##############################################################
-# Learning Module: Introducation to Napalm
+# Introducation to Napalm
 # Author: Stuart Clark <stuaclar@cisco.com>
 #
-#
-# Allows you to get router facts change to an IOS-XR device
-# python get_facts.py -ip [ip address]
+# Demo for Devnet Create 2018 - https://github.com/bigevilbeard/napalm_create
 ##############################################################
 
-from napalm_base import get_network_driver
-import argparse
+from napalm import get_network_driver
 
-
-parser = argparse.ArgumentParser()
-parser.add_argument("-ip", "--router_ip", help="Enter device ip address")
-args = parser.parse_args()
-device_ip = args.router_ip
-
-driver = get_network_driver('iosxr')
-device = driver(username='cisco',
-                password='cisco',
-                hostname=device_ip)
+driver = get_network_driver('ios')
+device = driver(hostname='10.10.20.48', 
+	            username='cisco', 
+	            password='cisco_1234!')
 
 device.open()
 print 'Napalm Is Running........'

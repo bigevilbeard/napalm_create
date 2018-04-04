@@ -33,6 +33,7 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ```
 mkdir napalm
+cd napalm
 ```
 
 # Clone the Repo

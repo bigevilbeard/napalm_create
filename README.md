@@ -16,7 +16,7 @@ This workshops gets you up-and-running with NAPALM in a Devnet Sandbox environme
 
 ## Prerequisites
 
-For this lab an ssh client is require to connect to the devbox. Using Mac/Linux directly use the OS native SSH client. For connecting using an SSH client such as PuTTY.
+For this lab an ssh client is required to connect to the devbox. Using Mac/Linux directly use the OS native SSH client. For connecting using an SSH client such as PuTTY.
 
 ```
 ssh root@10.10.20.20 / password cisco123

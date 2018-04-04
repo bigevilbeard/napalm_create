@@ -15,7 +15,7 @@ device = driver(hostname='10.10.20.48',
 	            password='cisco_1234!')
 
 device.open()
-get_ports = device.get_interfaces_counters()
+get_int_counters = device.get_interfaces_counters()
 device.close()
 
-print get_ports
+print get_int_counters

@@ -12,11 +12,6 @@ from napalm import get_network_driver
 import sys
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-ip", "--router_ip", help="Enter device ip address")
-args = parser.parse_args()
-device_ip = args.router_ip
-
 driver = get_network_driver('ios')
 device = driver(hostname='10.10.20.48', 
                 username='cisco', 

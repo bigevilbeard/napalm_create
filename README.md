@@ -42,6 +42,10 @@ cd napalm
 git clone https://github.com/bigevilbeard/napalm_create.git
 ```
 
+```
+cd napalm_create
+```
+
 # Installing Napalm
 
 When installing Napalm installed the latest version 2.X as there were fundamental changes that happened between Naplm 1.X and 2.X.

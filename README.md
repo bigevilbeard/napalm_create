@@ -22,7 +22,7 @@ For this lab an ssh client is required to connect to the devbox. Using Mac/Linux
 ssh root@10.10.20.20 / password cisco123
 
 ```
-Putty Dowload link 
+Putty Download link 
 ```
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html 
 

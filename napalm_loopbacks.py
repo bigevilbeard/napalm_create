@@ -47,7 +47,7 @@ if len(diffs) > 0:
         sys.exit('Script aborted by user')
     
 else:
-    print('No changes needed')
+    print('No changes needed' u"\U0001F37A")
     device.discard_config()
 
 device.close()
